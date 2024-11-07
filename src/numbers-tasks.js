@@ -281,9 +281,6 @@ function getCube(num) {
  *   10 => 55
  */
 function getFibonacciNumber(index) {
-  // return index <= 1
-  //   ? index
-  //   : getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
   if (index === 0) {
     return 0;
   }
@@ -294,7 +291,7 @@ function getFibonacciNumber(index) {
     first = secondFirst;
     secondFirst = sum;
   }
-  return secondFirst; // по сути последний sum
+  return secondFirst;
 }
 
 /**
